@@ -41,6 +41,7 @@ A hands-on home lab built to practice Windows Server administration and Active D
 - Source: [Microsoft Evaluation Center](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2022)
 - Selected: English (United States) — 64-bit ISO
 ![image alt](https://github.com/Whoami237Y/windows-server-homelab/blob/96a55834e7465ee431528f87f2c2596e6d165352/screenshots/1.jpg)
+![image alt](https://github.com/Whoami237Y/windows-server-homelab/blob/ad8d215bf5c87fa9753e68e4d11175ebf6f51b53/screenshots/2.jpg)
 
 ### Step 2 — Install & Configure the VM
 - Installed Windows Server 2022 in a virtualized environment
@@ -50,7 +51,8 @@ A hands-on home lab built to practice Windows Server administration and Active D
 hostname
 # Output: DC01
 ```
-![image alt](https://github.com/Whoami237Y/windows-server-homelab/blob/96a55834e7465ee431528f87f2c2596e6d165352/screenshots/2.jpg)
+![image alt](https://github.com/Whoami237Y/windows-server-homelab/blob/ad8d215bf5c87fa9753e68e4d11175ebf6f51b53/screenshots/2.1.jpg)
+![image alt](https://github.com/Whoami237Y/windows-server-homelab/blob/96a55834e7465ee431528f87f2c2596e6d165352/screenshots/3.jpg)
 
 ### Step 3 — Configure Static IP & DNS
 Configured manually via **Control Panel → Network Connections → IPv4 Properties:**
@@ -60,13 +62,12 @@ Subnet Mask:      255.255.255.0
 Default Gateway:  192.168.1.1
 Preferred DNS:    127.0.0.1  (pointing to itself as DNS server)
 ```
-![image alt](https://github.com/Whoami237Y/windows-server-homelab/blob/96a55834e7465ee431528f87f2c2596e6d165352/screenshots/3.jpg)
+![image alt](https://github.com/Whoami237Y/windows-server-homelab/blob/96a55834e7465ee431528f87f2c2596e6d165352/screenshots/004.jpg)
 
 ### Step 4 — Install Active Directory Domain Services
 - Installed AD DS role via Server Manager
 - Promoted server to Domain Controller
 - Created new forest with root domain: `lab.local`
-![image alt](https://github.com/Whoami237Y/windows-server-homelab/blob/96a55834e7465ee431528f87f2c2596e6d165352/screenshots/004.jpg)
 
 ### Step 5 — Verify Active Directory
 Confirmed successful AD setup via PowerShell:

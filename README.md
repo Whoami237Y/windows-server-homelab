@@ -68,6 +68,7 @@ Preferred DNS:    127.0.0.1  (pointing to itself as DNS server)
 - Installed AD DS role via Server Manager
 - Promoted server to Domain Controller
 - Created new forest with root domain: `lab.local`
+![image alt](https://github.com/Whoami237Y/windows-server-homelab/blob/e6f62a51aafa018f0262ef471c19be5460fc2bb4/screenshots/4.1.jpg)
 
 ### Step 5 — Verify Active Directory
 Confirmed successful AD setup via PowerShell:
